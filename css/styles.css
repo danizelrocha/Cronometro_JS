@@ -1,3 +1,11 @@
+body{
+    background: #000;
+}
+
+h1{
+    color: white;
+}
+
 div{
     text-align: center;
 }
@@ -7,4 +15,22 @@ button{
     width: 5rem;
     cursor: pointer;
     border-radius: 8px;
+    color: rgb(20, 19, 19);
+}
+
+button:hover{
+    color: white;
+    border-radius: 50%;
+}
+
+.start-btn{
+    background-color: yellowgreen;
+}
+
+.pause-btn{
+    background-color:gold;
+}
+
+.stop-btn{
+    background-color: rgb(219, 15, 15);
 }
