@@ -1,11 +1,33 @@
+var sec=0
+var min=0
+var interval
+
+
 function start(){
-    console.log('iniciou')
+  interval=setInterval(watch,10)
+    /* console.log('iniciou') */
 }
 
 function pause(){
-    console.log('Pausou')
+    clearInterval(interval)
+    /* console.log('Pausou') */
 }
 
 function stop(){
-    console.log('Parou')
+    clearInterval(interval)
+    sec=0
+    min=0
+    document.getElementById('couter').innerText='00:00'
+
+    /* console.log('Parou') */
+}
+
+function watch(){
+    sec++
+    if(sec==60){
+        min++
+        sec=0
+    }
+    document.getElementById('couter').innerText=min+':'+sec
+    /* console.log('já') */
 }
