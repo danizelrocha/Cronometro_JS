@@ -1,0 +1,10 @@
+div{
+    text-align: center;
+}
+
+button{
+    height: 2rem;
+    width: 5rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
